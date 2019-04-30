@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+# Minumuljed
+#
+echo -n "Kristjan Võsonurm" # väljastada ilma reavahetuseta Ees ja Perenimi 
+echo "" # väljastada ja teha reavahetus
+echo -n "ISP218" # väljastada ilma reavahetuseta oma õppegrupp
+echo "" # väljastada ja teha reavahetus
+echo -n "Tundub olevat loogiline aga ei tea veel" # väljastada ilma reavahetuseta oma aine emotsioonid
+echo "" # väljastada ja teha reavahetus
+echo -n "Olen suhteliselt palju arenenud ja palju teada saanud" # väljastada ilma reavahetuseta oma emotsioonid
+echo "" # väljasta ja teha reavahetus 
+#
+# skripti lõpp
