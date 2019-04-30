@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+# Kuupaev ja kalender
+#
+echo Today is $(date +"%A,%B,%Y") # näitab praegust päeva kuud ja aastat
+echo Time is $(date +"%I:%M") # näitab praeguseid tunde ja minuteid
+echo ""
+echo -n Calendar of
+cal
+#
+# skripti lõpp
+
+ 
