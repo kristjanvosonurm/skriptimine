@@ -1,0 +1,22 @@
+#!/bin/bash
+#
+#skripti algus
+#
+echo -n "Mitu reisijat on teie grupis?:"
+read inimesed  Küsitleb inimeste arvu
+
+echo -n "Mitu kohta on ühes bussis?:"
+read kohad #Küsib kohtasid
+
+bussid=`expr $inimesed / $kohad`
+ylejaanud=`expr $inimesed % $kohad`
+
+echo "Kokku on vaja $bussid bussi ja kui see number $ylejaanud ei ole 0 ringis siis on vaja busse juurde."
+
+# skripti lõpp
+
+
+
+
+
+
