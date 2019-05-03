@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+# Varlog leidmine
+#
+find /var -name *.log 2>/dev/null -exec wc -l '{}' \; | sort -n -r | cut -f2 -d " "
+# Find leiab need vajalikud failid mida otsid 
+# 2>/dev/null ei näita erroreid nt premission denied 
+# skripti lopp
+
