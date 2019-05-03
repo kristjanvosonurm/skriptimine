@@ -1,0 +1,40 @@
+#!/bin/bash
+#
+# Enda nimi ja perenimi
+#
+echo -n "Tervist mis on teie nimi?" #Küsib eesnime
+read nimi # annam sisestamiskoha
+echo -n "Üks küsimus veel mis on teie perenimi?" #Küsib perenime
+read perenimi #annab perenime sisestamis koha 
+echo "Tere tulemast tagasi $nimi $perenimi" #tervitused skripti poolt
+#
+# skripti lõpp
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#olen homofoob
+
