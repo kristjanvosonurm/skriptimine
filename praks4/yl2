@@ -1,0 +1,42 @@
+#!/bin/bash
+#
+# Küpsisetordi skript
+
+# skript algab siit 
+
+# Küsime kokalt aluskandiku pikust ja laiust sentimeetrites
+echo -n "Palun sisestage aluskandiku pikkus (cm): "; read pikkus
+echo -n "Palun sisestage aluskandiku laius (cm) "; read laius
+
+#Küsime kokalt küpsise suurust
+echo -n "Palun sisestage küpsise suurus (cm): "; read kypsis
+echo -n "Mitu kihti on tordil: "; read kihid 
+echo -n "Mitu küpsist on pakkis: "; read pakk
+
+#Teeb kandiku pindala 
+pindala=`expr $pikkus \* $laius`
+
+#Arvutab mitu küpsist on vaja
+vaja=`expr $pindala / $kypsis`
+
+# Küsib kokalt mitu kihti on toridl
+kogukypsis=`expr $vaja \* $kihid`
+
+#Arvutab pakkide koguse
+pakid=`expr $kogukypsis / $vaja`
+
+#Arvutab kas on mõnda üksikut küpsist peale pakkide vaja
+ylej22k=`expr $kogukypsis % $pakk`
+
+#Teeme niimodi et kui ülejääk on väiksem kui üks siis ei kuvata midagi.
+if [ $ylej22k -lt 1 ]
+then
+echo "Teil on vaja $pakid pakk(i) küpsiseid"
+else
+# Anname kokkale teise väljaande, kui jääk on suurem kui 1
+echo "Teil on vaja $pakid pakk(i) küpsiseid ja $ylej22k küpsist"
+fi;
+#
+#skripti lõpp 
+
+
