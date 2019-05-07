@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+#Skripti algus
+echo -n "Palun kirjutage mis on directory nimi, mida soovite kokku pakkida:" #küsib mida soovite kokku pakkida
+read nimi
+echo -n "Kuhu soovite kataloogi paigutada:" #kuhu kataloog surutakse
+read dir 
+failinimi="backup.tar.gz" #arhviivi nimi
+tar -czf $failinimi $backup #failid mida vaja
+cp $failinimi $dir #kopeerib failid
+echo "Sinu backup on tehtud ja kokku surutud" #ütleb et sinu fail on kokku pakkitud
+#skriptilõpp
