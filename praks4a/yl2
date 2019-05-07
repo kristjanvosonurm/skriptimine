@@ -1,0 +1,9 @@
+#!/bin/bash
+#skripti algus
+#Annab koha kuhu sisestada ringi raadius
+echo -n "Sisestage palun ringi raadius(sentimeetrites):" 
+read raadius loeb raadiust
+pindala=$(echo "$raadius  * $raadius * 3.14" | bc) #Arvutab pindala
+ymbermoot=$(echo "2 * 3.14 * $raadius" | bc) #arvutab ümbermõõdu
+#Ütleb arvutatud andmed 
+echo "Sinu ringi pindala on $pindala ruutsentimeetrit ja ümbermõõt on $ymbermoot cm"
