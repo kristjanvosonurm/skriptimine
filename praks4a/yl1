@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+#Tervitusskirpt
+#
+echo -n "Tere sisestage oma nimi:" #annab koha kuhu sisestada nime
+read nimi #loeb nime 
+echo  "Tere tulemast,$nimi." #Tervitab seda nime mida on pantud sisse
+echo -n "Sisestage oma sünniaasta:" #Annab koha kuhu sisestada sünniaasta
+read vanus
+h=`date +"%Y"` #arvestab arvuti kellaajast aastaid
+y=`expr $h - $vanus` #Arvutab välja vanuse
+echo "$nimi,sina oled $y vana." #ütleb kui vana oled ja mis on teie nimi
+#
+#Skripti lõpp
