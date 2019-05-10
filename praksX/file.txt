@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+echo -n "Palun sisestage oma nimi:"
+read nimi
+echo -n "Palun sisestage oma perenimi:"
+read perenimi
+echo "Tere tulemast $nimi $perenimi!"
+sleep 1s
+echo  "Aitäh see minu skript"
