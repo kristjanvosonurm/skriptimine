@@ -1,0 +1,13 @@
+#!/bin/bash
+#skripti algus
+echo -n "Palun sisesta a külje väärtus:"
+read a
+echo -n "Palun sisesta b külje väärtus:"
+read b
+a2=`echo "scale=2; ($a^2)" | bc` #Korrutab a2-ga
+b2=`echo "scale=2; ($b^2)" | bc` #Korrutab b2-ga
+c2=`echo "scale=2;($a2+$b2)" | bc` #a korda 2 pluss b korda 2
+c=`echo "scale=2;sqrt ($c2)" | bc` #Võtab ruutu ning korrutab c2-ga
+echo "c = $c"
+#Skripti lõpp
+
