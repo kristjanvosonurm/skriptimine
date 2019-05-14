@@ -1,0 +1,13 @@
+#!/bin/bash
+#skriptimine algus
+echo -n "Palun sisesta a külje väärtus:" #Loeb a väärtust
+read a
+echo -n "Palun sisesta b külje väärtus:" #Loeb b väärtuse
+read b 
+echo -n "Palun sisesta c kõlje väärtus:" #Loeb c väärtust
+read c
+p=$(echo "($a + $b + $c) / 2" | bc) #Liidab abc ning jagab kahega,et saada ümbermõõtu
+S1=$(echo "$p * ($p - $a) * ($p - $b) * ($p - $c)" | bc) #Korrutab ümbermõõdu ning lahutab a ümbermõõdust ning siis korrutab ümbermõõdu ning lahutab ümbermõõdu b-st peale seda korrutab ning lahutab ümbermõõdu.
+S2=$(echo "scale=2;sqrt($S1)" | bc) #5 arvu peale koma ning ruutjuur S1-st
+echo "Pindala = $S2"
+
