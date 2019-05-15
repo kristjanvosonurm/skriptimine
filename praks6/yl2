@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+#Skripti algus
+echo -n "Sisestage palun reisijate arv:"
+read arv
+echo -n "Sisestage palun bussi kohtade arv:"
+read kohad
+sleep 1s
+bussiarv=`expr $arv / $kohad`
+ulejaanud1=`expr $bussiarv \* $kohad`
+ulejaanud2=`expr $arv - $ulejaanud1`
+if [ $ulejaanud2 -ne 0 ];
+then
+bussiarv=`expr $bussiarv + 1`
+fi
+echo "Kokku on vaja $bussiarv bussi."
+#skripti lõpp
+
