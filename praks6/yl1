@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+#Skripti algus
+echo -n "Palun sisestage täisarv:" #Palub sisestada arvu
+read arv #loeb arvu
+sleep 2s
+if [ $(($arv%2)) -eq 0 ]; #Kui arv on paaris siis ütleb et see paaris
+then
+echo "$arv on paarisarv"
+else
+echo "$arv on paarituarv"
+fi
+#Skripti lõpp
