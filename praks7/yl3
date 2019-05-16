@@ -1,0 +1,21 @@
+#!/bin/bash
+#
+#Skripti algus
+echo -e "Sisesta kellaaeg: \c"  #Kellaja skript
+read aeg
+if [ $aeg -ge 6 -a $aeg -lt 13 ]; #Kui kellaaeg on 6-12 tuleb tere hommikust
+then
+echo "Tere hommikust!"
+elif [ $aeg -ge 12 -a $aeg -lt 19 ]; #Kui sisestad kellaaja vahemikus 12-18 on tere päevast
+then
+echo "Tere päevast!"
+elif [ $aeg -ge 18 -a $aeg -lt 23 ]; #Kui sisestate kellaja vahemikus 18-22 siis on tere õhtust
+then
+echo "Tere õhtust!"
+elif [ $aeg -ge 22 -a $aeg -lt 25 ] || [ $aeg -ge 0 -a $aeg -lt 6 ]; #Kui sisestade kellaja 22-24 vahemikus on Head ööd
+then 
+echo "Head ööd!"
+else
+echo "Kindel et te siit maalt olete"
+fi
+#Skripti lõpp 
