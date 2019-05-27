@@ -1,0 +1,22 @@
+#1/bin/bash
+#
+#Skripti algus
+echo -n "Palun sisestage kuu number:" 
+read number
+case $number in
+"1") echo "See tundub olevat Jaanuar";;
+"2") echo "See tundub olevat Veebruar";;
+"3") echo "See tundub olevat Märts";;
+"4") echo "See tundub olevat Aprill";;
+"5") echo "See tundub olevat Mai";;
+"6") echo "See tundub olevat Juuni";;
+"7") echo "See tundub olevat Juuli";;
+"8") echo "See tundub olevat August";;
+"9") echo "See tundub olevat September";;
+"10") echo "See tundub olevat Oktoober";;
+"11") echo "See tundub olevat November";;
+"12") echo "See tundub olevat Detsember";;
+"360") echo "See on kerge noscope";;
+*) echo "Error 404 sobimatu sümbol";;
+esac
+#Skripti lõpp
