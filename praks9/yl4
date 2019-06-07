@@ -1,0 +1,22 @@
+#!/bin/bash
+#
+#
+#Skripti algus
+echo -n "Palun sisestage ridade arv:"
+read rida
+var1=$rida
+var2=$rida
+for (( j = 1; j <= $rida; j++))
+do 
+echo -n $j". "
+for (( i =1; i <= $r-j; i++ ))
+do echo -n "0"
+done
+for (( k = 1; k <=j; k++))
+do 
+echo -n "*"
+done 
+echo ""
+done
+#Skripti lõpp
+ 
